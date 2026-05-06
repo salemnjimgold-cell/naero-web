@@ -1,0 +1,53 @@
+.mockup-screen {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-dark);
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/hero_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.mockup-screen::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.mockup-placeholder {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.mockup-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 24px;
+  animation: pulse 2s infinite;
+}
+
+.mockup-loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(6, 182, 212, 0.2);
+  border-top-color: var(--primary-cyan);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
