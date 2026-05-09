@@ -1,4 +1,60 @@
-.page-container {
-  padding-top: 120px;
-  min-height: 80vh;
+/* Newcomers.css */
+.newcomers-page {
+  min-height: 100vh;
+}
+
+.hero-section {
+  padding: 160px 0 100px;
+}
+
+.hero-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 90% 10%, rgba(16, 185, 129, 0.05) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.badge-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+}
+
+.icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Specific button style for Newcomers to highlight green accent */
+.newcomers-page .btn-primary {
+  background: var(--primary-green);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.newcomers-page .btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 120px;
+  }
 }
